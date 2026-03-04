@@ -3,7 +3,6 @@ import express from 'express'
 
 dotenv.config()
 
-import productController from './controllers/product.controller'
 import authorController from './controllers/author.controller'
 import subjectController from './controllers/subject.controller'
 import bookController from './controllers/book.controller'
@@ -12,12 +11,6 @@ const port = process.env.PORT || 8080
 
 const app = express()
 app.use(express.json())
-
-app.get('/api/products', productController.findAll)
-app.get('/api/products/:uuid', productController.findOne)
-app.post('/api/products', productController.create)
-app.put('/api/products/:uuid', productController.update)
-app.delete('/api/products/:uuid', productController.delete)
 
 app.get('/api/authors', authorController.findAll)
 app.get('/api/authors/:uuid', authorController.findOne)

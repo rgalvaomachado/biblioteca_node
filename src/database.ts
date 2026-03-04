@@ -1,6 +1,5 @@
 import { DataSource } from "typeorm";
 import 'reflect-metadata'
-import Product from "./entities/product.entity"
 import Author from './entities/author.entity'
 import Book from './entities/book.entity'
 import Subject from "./entities/subject.entity";
@@ -15,7 +14,6 @@ const AppDatabase = new DataSource({
     synchronize: true,
     logging: true,
     entities: [
-        Product,
         Author,
         Book,
         Subject
