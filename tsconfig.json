@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "module": "CommonJS",    
+    "moduleResolution": "Node",
+    "target": "ES2016",
+    
+    "esModuleInterop": true,        // Permite import express from 'express'
+    "experimentalDecorators": true, // Para o TypeORM
+    "emitDecoratorMetadata": true,  // Para o TypeORM
+    "skipLibCheck": true,
+    "rootDir": "./src",
+    "outDir": "./dist"
+  }
+}
